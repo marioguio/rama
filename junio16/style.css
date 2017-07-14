@@ -1,0 +1,45 @@
+#primero{
+  border: solid 1px red;
+  padding: 30px;
+
+}
+
+.cuadro{
+  border: solid 2px blue;
+  margin: 15px 0px;
+  width: 200px;
+}
+.pos{
+  //position: absolute;
+  //top:  0px;
+  //left: 0px;
+}
+
+@media (min-width:700px) {
+  #primero{
+    border: dotted 5px green;
+  }
+  .cuadro{
+
+  }
+  a{
+    border-radius: 5px;
+    border: solid 1px green;
+    margin: 20px;
+    padding: 14px 20px;
+    cursor: col-resize;
+    text-decoration: none;
+    color: green;
+  }
+
+
+  a:hover {
+  border: solid black 2px;
+  border-radius: 5px;
+  background-color: darkblue;
+  color: white;
+  margin: 20px;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;}
+}

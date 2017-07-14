@@ -1,0 +1,19 @@
+body{
+  background-color: rgb(54, 58, 66);
+}
+.logo{
+  width: 30px;
+  height: auto;
+}
+.fondo{
+  background-color: rgb(54, 58, 66);
+  border: rgb(54, 58, 66);
+  color: white;
+
+}
+h2{
+  color: rgb(203, 207, 214);
+}
+.carousel-inner img{
+  margin: auto;
+}

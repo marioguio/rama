@@ -1,0 +1,35 @@
+div{
+  margin: 50px 0px;
+  display: block;
+
+}
+.google a{
+  border-radius: 5px;
+  border: solid 1px green;
+  padding: 14px 20px;
+}
+.facebook a{
+  border-radius: 5px;
+  border: solid 1px blue;
+  padding: 14px 20px;
+
+}
+.facebook a:hover{
+  background-color: blue;
+  cursor: col-resize;
+  text-decoration: none;
+  color: white;
+}
+.google a:hover{
+  background-color: green;
+  cursor: col-resize;
+  text-decoration: none;
+  color: white;
+}
+
+
+@media (min-width:700px){
+  div{
+    margin: 50px 10px;
+    display: inline-block;
+  }
