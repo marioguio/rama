@@ -1,0 +1,13 @@
+<div class="row">
+    <h2> <%= @ifo[:name]%> </h2>
+    <img  class="img-circle"src= <%= @ifo[:foto]%> alt="Gabriel"><br>
+    <br>
+    <p><%= @ifo[:bio] %></p>
+    <a class="wiki" target="_blank" href= <%= @ifo[:link]%> >wikipedia</a>
+    <br>
+    <br>
+    <form  action="/result" method="post">
+      <input type="number" name=<%= @ifo[:medida]%>>
+      <button type="submit" name="button">convertir</button>
+    </form>
+</div>

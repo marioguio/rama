@@ -1,0 +1,12 @@
+<% if  @escala=="celsius" %>
+ <h2> La conversion de <%= @dato %> <%= @escala %>  a kelvin es :<%= @dato+273.15%> kelvin </h2>
+ <h2> La conversion de <%= @dato %> <%= @escala %>  a fahrenheit es :<%= (@dato*9/5)+32%> fahrenheit </h2>
+<%elsif @escala == "kelvin"  %>
+ <h2> La conversion de <%= @dato %> <%= @escala %>  a celsius es :<%= @dato-273.15%> celsius  </h2>
+ <h2> La conversion de <%= @dato %> <%= @escala %>  a fahrenheit es :<%= 1.8 * (@dato - 273) + 32%> fahrenheit </h2>
+<% elsif @escala == "fahrenheit"  %>
+ <h2> La conversion de <%= @dato %> <%= @escala %>  a celsius es :<%= (@dato- 32.0)*5/9%> celsius  </h2>
+ <h2> La conversion de <%= @dato %> <%= @escala %>  a kelvin es :<%=(@dato+459.67)*5/9%> kelvin </h2>
+<% else %>
+  <h1>malos datos<h1>
+<% end %>

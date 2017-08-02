@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="stylesheels/style.css">
+  <title>Ha_Ha</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+              <div id="sidebar" class="well sidebar-nav">
+                <img class="logo" alt="Brand" src="images/logo.jpg">
+                  <h5><i class="glyphicon glyphicon-home"></i>
+                      <small><b>Temperatura</b></small>
+                  </h5>
+                  <ul class="nav nav-pills nav-stacked">
+                      <li class=""><a href="/">Home</a></li>
+                      <li><a href="/escala/celsius">Celsius</a></li>
+                      <li><a href="/escala/kelvin">Kelvin</a></li>
+                      <li><a href="/escala/fahrenheit">Fahrenheit</a></li>
+                      <li><a href="">escala</a></li>
+                  </ul>
+                  <h5><i class="glyphicon glyphicon-user"></i>
+                      <small><b>USERS</b></small>
+                  </h5>
+              </div>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+                <h3>Temperatura</h3>
+                <hr>
+                <div class="col-xs-offset-1">
+                  <%= yield %>
+                </div>
+            </div>
+          </div>
+      </div>
+
+    </div>
+
+  </body>
+  </html>

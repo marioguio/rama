@@ -1,0 +1,24 @@
+<h1>personas</h1>
+<table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>nombre</th>
+      <th>apellido</th>
+      <th>view</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @personas.each do |persona| %>
+    <tr>
+      <td><%= persona.id %></td>
+      <td><%= persona.nombre %></td>
+      <td><%= persona.apellido %></td>
+      <td><%= link_to "ir", persona_path(persona)%></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+<div>
+  <%= link_to "crear persona", new_persona_path %>
+</div>

@@ -1,0 +1,13 @@
+<div class="row">
+    <h2> <%= @ja[:name]%> </h2>
+    <img  class="img-circle"src= <%= @ja[:foto]%> alt="Gabriel"><br>
+    <br>
+    <p><%= @ja[:bio] %></p>
+    <a class="wiki" target="_blank" href= <%= @ja[:link]%> >wikipedia</a>
+    <br>
+    <br>
+    <form  action="result" method="post">
+      <input type="number" name="kelvin">
+      <button type="submit" name="button">convertir</button>
+    </form>
+</div>

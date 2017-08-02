@@ -1,0 +1,20 @@
+<%= form_for @persona, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+  <div>
+    <%= f.label :nombre %>
+    <%= f.text_field :nombre %>
+  </div>
+  <div>
+    <%= f.label :apellido %>
+    <%= f.text_field :apellido%>
+    <div>
+  <div>
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+  </div>
+  <div>
+    <%= f.label :edad %>
+    <%= f.number_field :edad %>
+  </div>
+  <div>
+    <%= f.submit "Create" %></div>
+<% end %>

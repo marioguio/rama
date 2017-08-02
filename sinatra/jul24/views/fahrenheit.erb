@@ -1,0 +1,13 @@
+<div class="row">
+    <h2> <%= @data[:name]%> </h2>
+    <img  class="img-circle"src= <%= @data[:foto]%> alt="Gabriel"><br>
+    <br>
+    <p><%=@data[:bio] %></p>
+    <a class="wiki" target="_blank" href= <%= @data[:link]%> >wikipedia</a>
+    <br>
+    <br>
+    <form  action="result" method="post">
+      <input type="number" name="fahrenheit">
+      <button type="submit" name="button">convertir</button>
+    </form>
+</div>
